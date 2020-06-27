@@ -1,0 +1,9 @@
+![Dart style conventions]
+
+*Identifiers in dart comes in three flavours 1.UpperCamelCase  2.lowerCamelCase  3.lowercase_wit_underscores.
+
+?Do : Classes, enums, typedefs, and type parameters should use "UpperCamelCase"
+
+?Do : DO name libraries, packages, directories, and source files using lowercase_with_underscores.
+
+? : const names,Class members, top-level definitions, variables, parameters, and named parameters should use "lowerCamelCase"
