@@ -1,0 +1,26 @@
+//!Dart support utf16 bit string operation so, unicode is allowed in dart
+
+* Hello*5, Hello +Hi
+
+Eg.1String s = "Hello world";
+  print(s.codeUnits);
+  !output:[72, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100]
+ * s=.codeUnitAt(0) //72
+ *s.runes.toList() //same as list output
+
+
+eg2.string = 'dartlang';
+'$string has ${string.length} letters'; 
+
+
+eg3.print(String.fromCharCodes(
+      [72, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100]));
+      !output : Hello World
+
+*Properties are : [isEmpty,hasCode,codeUnits,codeUnit,isNotEmpty,length,runes,runtimeType]
+
+*methods are : [codeUnitAt(int index),compareTo(String other),contains(Pattern other,[int startIndex =0]),startsWith/endsWith(String other),indexOf(Pattern pattern,[int start]),lastIndexOf(Pattern pattern, [int start]),
+padLeft/padRight(int width, [String padding = ' ']) 
+]//End of list1
+
+?[replaceAll(Pattern from, String replace) ,replaceFirst(Pattern from, String to, [int startIndex = 0]) ,split(Pattern pattern),substring(int startIndex, [int endIndex]),toLowerCase(),toUpperCase(), trim(),trimLeft()/trimRight,]

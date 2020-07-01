@@ -1,0 +1,8 @@
+*Everything in dart is object even numbers,funcitons and null are objects.All objects inherit from the Object class.
+
+!When don't know the type we want to receive then use dynamic type.
+
+*List<int> only list of int ,List<dynamic> list of any object.
+
+?Dart do not have public,private,protected to make something private start it's name wit '_'.
+

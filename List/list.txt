@@ -1,0 +1,43 @@
+/*
+List<int> l = []//growableList this is.
+List<int> l = const [] //fixedLengthList
+List<int> l = List(5)//fixedLengthList
+*/
+
+
+!Eg1. List<int> fixedLengthList = new List(5);
+fixedLengthList.length = 0;  // Error
+fixedLengthList.add(499);    // Error
+fixedLengthList[0] = 87;
+List<int> growableList = [1, 2];
+growableList.length = 0;
+growableList.add(499);
+growableList[0] = 87;
+
+!eg2.print(List.filled(5, 10));
+ *output:[10, 10, 10, 10, 10]
+
+!eg3.print(List.from(List.filled(5, 10)));
+*output : Same as above
+
+!eg4.  List<int> l = List<int>.generate(10, (index) => index * index);
+print(l);
+*output:[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+!eg5.print(List.of([1, 2, 3, 4, 5]));
+
+!List.unmodifiable(Iterable elements)
+Creates an unmodifiable list containing all elements.
+Here Iterable is just like collection on which can iterate Like "LIST".
+
+!Properties
+[first,last,length,reversed,hashCode,isEmpty,isNotEmpty,iterator,runTimeType,]
+
+!Methods (E denotes for element,(string,int,or any object))
+[add(E value),addAll(Iterable<E> iterable) ,asMap() ]
+ *Example of asMap()
+    var i = [1, 2, 3, 4, 5];
+    print(i.asMap());
+    output:{0: 1, 1: 2, 2: 3, 3: 4, 4: 5}
+
+[clear(),fillRange(int start, int end, [E fillValue]),getRange(int start, int end),indexOf(E element, [int start = 0]), indexWhere(bool test(E element), [int start = 0]) ,insert(int index, E element),insertAll(int index, Iterable<E> iterable) ,lastIndexOf(E element, [int start]) ,lastIndexWhere(bool test(E element), [int start]),remove(Object value),removeAt(int index) ,removeLast(),removeRange(int start, int end),removeWhere(bool test(E element)) ,replaceRange(int start, int end, Iterable<E> replacement) ]
