@@ -1,3 +1,5 @@
+//!Dart do not provide the keyword to create interface just the normal class uses as interface in the way just used.And if we use any class as interface we must have to override all the methods of that calss whether that function is defined or not.
+
 //*Interfaces in dart
 //*Every class implicitly defines an interface containing all the instance members of the class and of any interfaces it implements
 
